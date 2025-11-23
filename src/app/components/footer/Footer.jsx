@@ -13,10 +13,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Logo and Description */}
         <div>
-          {/* <h2 className="text-3xl font-bold mb-4 tracking-wide">Duranta Online</h2>
-          <p className="text-cyan-400 leading-relaxed">
-            The Faster Network.
-          </p> */}
+          
            <Image
                 src="/logo.png"
                 alt="Duranta Online Logo"

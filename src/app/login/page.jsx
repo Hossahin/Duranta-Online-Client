@@ -1,40 +1,4 @@
-// "use client";
-// import { useState } from "react";
 
-// export default function LoginPage() {
-//   const [form, setForm] = useState({ email: "", password: "" });
-//   const [msg, setMsg] = useState("");
-
-//   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
-
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-//     const res = await fetch("http://localhost:8000/api/login", {
-//       method: "POST",
-//       headers: { "Content-Type": "application/json" },
-//       credentials: "include", // important for cookies
-//       body: JSON.stringify(form),
-//     });
-//     const data = await res.json();
-//     setMsg(data.message);
-//     if (res.ok) {
-//   localStorage.setItem("userEmail", data.email);
-//   window.dispatchEvent(new Event("userLogin")); 
-// }
-//   };
-
-//   return (
-//     <div className="max-w-md mx-auto mt-20 text-white bg-gray-600 p-6 rounded-lg my-28">
-//       <h1 className="text-xl font-bold mb-4">Login</h1>
-//       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-//         <input name="email" placeholder="Email" onChange={handleChange} className="p-2 text-black" />
-//         <input name="password" type="password" placeholder="Password" onChange={handleChange} className="p-2 text-black" />
-//         <button className="bg-cyan-500 text-white p-2 rounded">Login</button>
-//       </form>
-//       {msg && <p className="mt-3">{msg}</p>}
-//     </div>
-//   );
-// }
 "use client";
 import { useState } from "react";
 

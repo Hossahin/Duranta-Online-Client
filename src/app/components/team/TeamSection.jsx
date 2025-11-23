@@ -1,42 +1,4 @@
-// // "use client";
-// import React from "react";
 
-// export default function TeamSection() {
-//   const teamMembers = [
-//     { name: "Nazmul Huda Anupam" },
-//     { name: "Biplob Majumder" },
-//     { name: "David Ive" },
-//     { name: "James Moro" },
-//   ];
-
-//   return (
-//     <section className="py-20 text-white">
-//       <div className="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-//         {/* Section Title */}
-//         <h2 className="text-4xl md:text-5xl font-bold mb-6 relative inline-block">
-//           {/*  */}
-//           <span className="relative z-10 ">THE TEAM</span>
-          
-//         </h2>
-
-//         {/* Team Members */}
-//         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
-//           {teamMembers.map((member, index) => (
-//             <div
-//               key={index}
-//               className="bg-gradient-to-b from-[#001B3D]/80 to-[#012E59]/60 p-6 rounded-2xl shadow-lg border border-blue-900 hover:scale-105 transition-transform duration-300"
-//             >
-//               <h3 className="font-bold text-lg sm:text-xl tracking-wide">
-//                 {member.name.toUpperCase()}
-//               </h3>
-//               {/* <div className="mt-3 h-[2px] w-12 bg-cyan-400 mx-auto"></div> */}
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 "use client";
 import React from "react";
 import Slider from "react-slick";
