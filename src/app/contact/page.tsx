@@ -1,12 +1,18 @@
+"use client"; // <- ADD THIS AT THE VERY TOP
 
-import React from "react";
+import React, { FormEvent } from "react";
 import Image from "next/image";
 import contactImg from "../../assets/contact.jpg";
 
-function ContactUs() {
+const ContactUs: React.FC = () => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("Form submitted");
+  };
+
   return (
     <section className="mx-auto px-4 py-16">
-      <div className="flex flex-col md:flex-row items-stretch gap-8 max-w-7xl mx-auto px-9 ">
+      <div className="flex flex-col md:flex-row items-stretch gap-8 max-w-7xl mx-auto px-9">
         {/* Left Side Image */}
         <div className="md:w-1/2 w-full rounded-lg overflow-hidden shadow-lg">
           <div className="relative w-full h-full min-h-[400px] md:min-h-[500px]">
@@ -25,7 +31,7 @@ function ContactUs() {
             Contact Us
           </h2>
 
-          <form className="flex flex-col gap-3 sm:gap-4">
+          <form className="flex flex-col gap-3 sm:gap-4" onSubmit={handleSubmit}>
             <input
               type="text"
               placeholder="Name"
@@ -63,6 +69,6 @@ function ContactUs() {
       </div>
     </section>
   );
-}
+};
 
 export default ContactUs;
