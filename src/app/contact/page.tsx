@@ -12,7 +12,7 @@ const ContactUs: React.FC = () => {
 
   return (
     <section className="mx-auto px-4 py-16">
-      <div className="flex flex-col md:flex-row items-stretch gap-8 max-w-7xl mx-auto px-9">
+      <div className="flex flex-col md:flex-row items-stretch gap-8 max-w-7xl mx-auto md:px-9">
         {/* Left Side Image */}
         <div className="md:w-1/2 w-full rounded-lg overflow-hidden shadow-lg">
           <div className="relative w-full h-full min-h-[400px] md:min-h-[500px]">

@@ -4,10 +4,10 @@ import Link from "next/link";
 import { FaFacebookF, FaXTwitter, FaInstagram, FaYoutube } from "react-icons/fa6";
 
 const socialLinks = [
-  { href: "#", icon: <FaFacebookF size={16} /> },
-  { href: "#", icon: <FaXTwitter size={16} /> },
-  { href: "#", icon: <FaInstagram size={16} /> },
-  { href: "#", icon: <FaYoutube size={16} /> },
+  { href: "#", icon: <FaFacebookF size={16} />, color: "#1877F2" },
+  { href: "#", icon: <FaXTwitter size={16} />, color: "#1DA1F2" },
+  { href: "#", icon: <FaInstagram size={16} />, color: "#E1306C" },
+  { href: "#", icon: <FaYoutube size={16} />, color: "#FF0000" },
 ];
 
 const quickLinks = ["About Us", "Packages", "Services", "Team", "Contact"];
@@ -36,9 +36,14 @@ const Footer: React.FC = () => {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition"
+                className="p-3 rounded-full transition-all duration-300 transform hover:scale-110 hover:opacity-90"
+                style={{
+                  background: "linear-gradient(to right, #06b6d4, #3b82f6)", // cyan → blue gradient
+                  color: "white",
+                  boxShadow: `0 0 10px ${link.color}33`,
+                }}
               >
-                {link.icon}
+                <div className="text-xl">{link.icon}</div>
               </Link>
             ))}
           </div>

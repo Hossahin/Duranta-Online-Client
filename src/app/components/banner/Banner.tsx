@@ -12,18 +12,18 @@ interface SocialIconProps {
 // Reusable SocialIcon component
 const SocialIcon: React.FC<SocialIconProps> = ({ href, icon, color }) => (
   <Link
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 rounded-full transition-all duration-300 hover:scale-110"
-    style={{
-      background: "rgba(255, 255, 255, 0.1)",
-      color: "white",
-      boxShadow: `0 0 10px ${color}33`,
-    }}
-  >
-    <div className="text-xl">{icon}</div>
-  </Link>
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-3 rounded-full transition-all duration-300 transform hover:scale-110 hover:opacity-90"
+      style={{
+        background: "linear-gradient(to right, #06b6d4, #3b82f6)", // cyan to blue gradient
+        color: "white",
+        boxShadow: `0 0 10px ${color}33`,
+      }}
+    >
+      <div className="text-xl">{icon}</div>
+    </Link>
 );
 
 const Banner: React.FC = () => {
@@ -47,8 +47,8 @@ const Banner: React.FC = () => {
         </p>
 
         {/* Social Icons */}
-        <div className="flex gap-5 mt-8 animate-float">
-          <SocialIcon href="https://facebook.com" icon={<FaFacebookF />} color="#1877F2" />
+        <div className="flex gap-5 mt-8 animate-float ">
+          <SocialIcon href="https://facebook.com" icon={<FaFacebookF />} color="#1877F2"  />
           <SocialIcon href="https://instagram.com" icon={<FaInstagram />} color="#E1306C" />
           <SocialIcon href="https://linkedin.com" icon={<FaLinkedinIn />} color="#0077B5" />
           <SocialIcon href="https://youtube.com" icon={<FaYoutube />} color="#FF0000" />
