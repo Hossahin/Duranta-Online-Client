@@ -83,9 +83,9 @@ const TeamSection: React.FC = () => {
                     className="rounded-xl"
                   />
                 </div>
-                <div className="absolute bottom-6 left-6 text-left text-white">
-                  <h3 className="text-xl font-semibold text-cyan-400">{member.name}</h3>
-                  <p className="text-sm text-cyan-400">{member.role}</p>
+                <div className="absolute bottom-6 left-6 text-left text-white  bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 p-2 rounded-2xl ">
+                  <h3 className="text-xl font-semibold text-white">{member.name}</h3>
+                  <p className="text-sm text-white">{member.role}</p>
                 </div>
               </div>
             </div>
